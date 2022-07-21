@@ -41,15 +41,17 @@
  .banner_image{
   width: 100%;
   overflow: hidden;
+  text-align: center;
 
   }
   .banner_image img{
-    width: 95%;
-    margin-left: 2%;
+    /* width: 95%; */
+    /* margin-left: 2%; */
   }
   img.camera{
-    width: 70%;
-    margin-left: 10%;
+    /* width: 70%; */
+    /* margin-left: 10%; */
+    margin-right: 30px;
   }
   .artical_wrapper{
     grid-template-columns: repeat(1, 1fr);
@@ -167,15 +169,86 @@
        mediam size 
 ===========================*/ 
 @media screen and (min-width:769px) and (max-width:992px) {
+  .logo {
+    width: 30%;
+    text-align: left;
+}
+.logo h2{
+  /* text-align: center; */
+}
+.manu{
+  width: 70%;
+  padding-top: 20px;
+}
+
+  .left_contain{
+    width: 50%;
+  }
+  .left_contain h1{
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  .left_contain p{
+    font-size: 0.6em;
+    margin-bottom: 40px;
+  }
   
+  .artical_wrapper{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .f_right_info h2{
+    font-size: 25px;
+    margin-bottom: 0;
+    line-height: 25px;
+  }
+  .f_right_info p{
+    font-size: 13px;
+    line-height: 14px;
+    margin-bottom: 10px;
+  }
+
 }
 
 
 @media screen and (min-width:993px) and (max-width:1200px) {
-  
+  .left_contain h1{
+    font-size: 2em;
+  }
+  .left_contain p{
+    font-size: 1em;
+  }
+  .f_right_info h2{
+    font-size: 1.6em;
+  }
+  .f_right_info p{
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
 }
 
 
-@media screen and (min-width:1201px) and (max-width:1400px) {
-  
+@media screen and (min-width:1201px) and (max-width:1290px) {
+  .f_right_info p{
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  .left_contain h1{
+    font-size: 2em;
+  }
+  .left_contain p{
+    font-size: 1em;
+    margin-bottom: 70px;
+  }
+ 
+}
+@media screen and (min-width:1537px) {
+  /* body{
+    background-color: tomato;
+  } */
+  .container{
+    width: 1600px;
+  }
 }
